@@ -11,7 +11,7 @@ let yetkiAdmin;
 
 let app = express();
 
-app.use('/public', express.static(path.join(__dirname, '../frontend/public'))); //cssyi yollamak için
+app.use('/public', express.static(path.join(__dirname, './frontend/public'))); //cssyi yollamak için
 
 app.use(bodyParser.json());
 
