@@ -183,7 +183,7 @@ app.post('/user/dersler', (req, res) => { //admin'den gelen ders kayıtları gü
 
 });
 
-mongoose.connect('mongodb+srv://durandal:ch0z3n0n3@deneme-4ol5s.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true }, (err) => {
+mongoose.connect('mongodb+srv://durandal:ch0z3n0n3@cluster0.tjagk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { useNewUrlParser: true }, (err) => {
     if (!err) {
         console.log('veritabanı bağlantısı başarılı!');
     }
