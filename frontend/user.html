@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/css/bootstrap.css">
+    <title>ÖĞRENCİ SAYFASI</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.57/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.57/vfs_fonts.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid h-100">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
+            style="margin-left: -15px; margin-right: -15px">
+            <a class="navbar-brand" href="#">Yatay Geçiş Muafiyet Programı</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+            </div>
+        </nav>
+
+        <div class="row mt-3">
+            <div class="col-12 col-md-3 mb-2">
+                <div class="card border-dark">
+                    <div class="card-header bg-dark text-light">
+                        <h4 class="card-title text-center m-0">ÖĞRENCİ BİLGİLERİ</h4>
+                    </div>
+                    <div class="card-body p-0">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Ad: </strong><span id="ad">İlker</span></li>
+                            <li class="list-group-item"><strong>Soyad: </strong><span id="soyad">Durmaz</span></li>
+                            <li class="list-group-item"><strong>TC No: </strong><span id="tc">16528732026</span></li>
+                        </ul>
+
+                    </div>
+                    <div class="card-footer bg-dark text-white">
+                        <h6 class="d-block d-sm-none">xs</h6>
+                        <h6 class="d-none d-sm-block d-md-none">sm</h6>
+                        <h6 class="d-none d-md-block d-lg-none">md</h6>
+                        <h6 class="d-none d-lg-block d-xl-none">lg</h6>
+                        <h6 class="d-none d-xl-block">xl</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-9  pl-md-0 ">
+                <div class="row">
+
+                    <div class="col-12 col-xl-6 pr-md-2">
+                        <div class="card border-primary">
+                            <div class="card-header bg-primary  text-light">
+                                <h4 class="card-title text-center m-0">İSTE DERSLERİ</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+
+                                    <div class="col-12 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text bg-dark text-light p-1">Dersler:</span>
+                                            </div>
+
+                                            <select class="custom-select p-1" id="isteDersler">
+                                                <option selected>Seçin...</option>
+                                                <option value="1">Kablosuz Sensör Ağlar</option>
+                                                <option value="2">Robotik Uygulamaları</option>
+                                                <option value="3">Yapay Zeka Uygulamaları</option>
+                                                <option value="3">Biyomedikal Sinyal İşleme</option>
+                                                <option value="3">Bilişim Hukuku</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-6  p-0 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text bg-dark text-light p-1">Kodu:</span>
+                                            </div>
+                                            <input type="text" id="isteDersKod" class="form-control p-1"
+                                                value="DENEME-DERS-001" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-3  p-0 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text bg-dark text-light p-1">Kredi:</span>
+                                            </div>
+                                            <input type="text" id="isteDersKredi" class="form-control p-1" value="99"
+                                                readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-3  p-0 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text bg-dark text-light p-1">Saat:</span>
+                                            </div>
+                                            <input type="text" id="isteDersSaat" class="form-control p-1" value="99"
+                                                readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-5 mt-2 mt-xl-0 pr-md-2 pl-xl-0">
+                        <div class="card border-success">
+                            <div class="card-header bg-success text-light">
+                                <h4 class="card-title text-center m-0">SAYILACAK DERSLER</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+
+                                    <div class="col-12 p-0 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text bg-dark text-light p-1">Ders Adı:</span>
+                                            </div>
+
+                                            <input type="text" id="ders" class="form-control p-1"
+                                                placeholder="Ders Girin">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-4 p-0 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text bg-dark text-light p-1">Kredi:</span>
+                                            </div>
+                                            <input type="text" id="dersKredi" class="form-control p-1"
+                                                placeholder="Kredi">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4 p-0 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text bg-dark text-light p-1">Saat:</span>
+                                            </div>
+                                            <input type="text" id="dersSaat" class="form-control p-1"
+                                                placeholder="Saat">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4 p-0 p-1">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text bg-dark text-light p-1">Not:</span>
+                                            </div>
+                                            <input type="text" id="dersNot" class="form-control p-1"
+                                                placeholder="Not">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-1 mt-2 mt-xl-0 ml-xl-0 pl-xl-0 pr-md-2">
+                        <button type="button" class="btn btn-danger btn-lg btn-block h-100 border-dark" id="dersEkle">DERS EKLE</button>
+                      </div>
+
+                    <div class="col-12 mt-2 pr-md-2">
+                            <div class="card border-dark">
+                                <div class="card-header bg-dark text-light">
+                                    <h4 class="card-title text-center m-0">EŞLEŞEN DERSLER</h4>
+                                </div>
+                                <div class="card-body p-0" id="cardBody">
+                                    <table class="table table-sm table-responsive-sm table-striped table-bordered">
+                                        <thead class="bg-dark text-light">
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Ders Adı</th>
+                                            <th scope="col">Kredi/Saat</th>
+                                            <th scope="col">Not</th>
+                                            <th scope="col">İSTE Karşılığı</th>
+                                            <th scope="col">Kredi/Saat</th>
+                                            <th scope="col">Sil</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody id="eslestirmeler">
+                                          
+                                        
+                                        </tbody>
+                                      </table>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="btn-group btn-block" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-dark" id="kaydet"><strong>KAYDET</strong></button>
+                                        <button type="button" class="btn btn-primary" id="yazdir"><strong>YAZDIR</strong></button>
+                                        <button type="button" class="btn btn-danger" id="temizle"><strong>LİSTEYİ SİL</strong></button>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <script src="public/js/user.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
