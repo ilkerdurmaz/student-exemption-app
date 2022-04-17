@@ -24,9 +24,12 @@ The application is used to apply for course exemption. The application is divide
 
 - Clone or download the aplication from here.
 - If Node.JS is not installed, install from here: [Node.JS](https://nodejs.org/en/)
-- In the project folder, open terminal and run the following command:
+- In the project folder, open terminal and run the following commands:
 
-
+```bash
+npm install
+```
+then:
 ```bash
 node app.js
 ```
