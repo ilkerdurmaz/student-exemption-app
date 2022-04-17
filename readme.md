@@ -1,6 +1,6 @@
 # Student Exemption Application
 
-**Graduation project in the second semester(2019). Frontend was built with Boostrap, backend was built with Node.JS(Express.JS, Mongoose) and MongoDB was used for the database. This is my first attempt to build a fully-functional web application**
+**Graduation project in the second semester(2019). Frontend was built with Bootstrap, backend was built with Node.JS(Express.JS, Mongoose) and MongoDB was used for the database. This is my first attempt to build a fully-functional web application**
 
 The application is used to apply for course exemption. The application is divided into two parts:
 
